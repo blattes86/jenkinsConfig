@@ -1,0 +1,13 @@
+commit a9fe659b05b4f6d96ff87c22ff745f613d877ca9
+tree e77ca148d0c5d18a5e286f7f4c46aa5f0ed5cd7a
+parent 6c1ef4ada8874a8bfe7f2088c9fcb138dd2b3086
+author blattes86 <blattes86@gmail.com> 2018-03-23 11:34:29 +0100
+committer blattes86 <blattes86@gmail.com> 2018-03-23 11:34:29 +0100
+
+    rajout test et duplication de code
+
+
+
+:100644 100644 2e4b3f52f0440c90e7f9fd3935e0e07c2f138bd3 4dfbac47eb8f688ec223fc23a86e51e0bd44be5c M	pom.xml
+:100644 100644 5aedb108ef6ac60cff83b5203cab3e57d317b467 971f99da957d8d967246006f2e1bb8cf19e85c54 M	src/main/java/com/example/DemoApplication.java
+:100644 100644 a5deddf419f420b6ec0a949b576fdf6f86881cd9 4576d3c213afbdbc89c4f39fd9be410ad2530068 M	src/test/java/com/example/DemoApplicationTests.java
