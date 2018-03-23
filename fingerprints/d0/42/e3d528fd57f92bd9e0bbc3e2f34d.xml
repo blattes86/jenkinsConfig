@@ -10,7 +10,7 @@
     </entry>
     <entry>
       <string>commit-build</string>
-      <ranges>5-25</ranges>
+      <ranges>5-26</ranges>
     </entry>
     <entry>
       <string>plop</string>
@@ -22,7 +22,7 @@
     </entry>
     <entry>
       <string>test-build-sonar</string>
-      <ranges>1-2</ranges>
+      <ranges>1-6</ranges>
     </entry>
     <entry>
       <string>test</string>
