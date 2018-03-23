@@ -1,0 +1,11 @@
+commit 9ff0d4b1fcae98043f6696fb18c9bba31bdefc05
+tree 2fd76ce9be83baecf47eeb721a22cd0bdb44ddbe
+parent 3738cefb6160c15b7b68217f3accfa0beabdd1dc
+author blattes86 <blattes86@gmail.com> 2018-03-22 12:01:49 +0100
+committer blattes86 <blattes86@gmail.com> 2018-03-22 12:01:49 +0100
+
+    ajout soustraction
+
+
+
+:100644 100644 bdc633e21046c7ccaf793ced6034e1e0b1281815 06e0fcbdff13896e358ffed69bd7ea052504494c M	src/test/java/com/example/DemoApplicationTests.java

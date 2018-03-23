@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-21 14:22:58.328 UTC</timestamp>
+  <md5sum>b75cda0d7dadff9e6c20f4e7f3c3bc82</md5sum>
+  <fileName>net.minidev:accessors-smart-1.1.jar</fileName>
+  <usages>
+    <entry>
+      <string>test/com.example:demo</string>
+      <ranges>3</ranges>
+    </entry>
+    <entry>
+      <string>test</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

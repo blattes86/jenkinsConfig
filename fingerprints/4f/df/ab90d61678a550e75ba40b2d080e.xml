@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-21 14:22:58.509 UTC</timestamp>
+  <md5sum>4fdfab90d61678a550e75ba40b2d080e</md5sum>
+  <fileName>org.springframework.boot:spring-boot-starter-logging-1.5.3.RELEASE.jar</fileName>
+  <usages>
+    <entry>
+      <string>test/com.example:demo</string>
+      <ranges>3</ranges>
+    </entry>
+    <entry>
+      <string>test</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

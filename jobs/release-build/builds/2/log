@@ -1,0 +1,726 @@
+Started by user [8mha:////4Fb7p/eeegJ9At02th6o2yDywtR30eyAzl6S3hcR7kDeAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9gpz8AgBal7TKvwAAAA==[0mplop plip
+Building in workspace /var/jenkins_home/workspace/release-build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/blattes86/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/blattes86/sample-spring-boot.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/blattes86/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6c1ef4ada8874a8bfe7f2088c9fcb138dd2b3086 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6c1ef4ada8874a8bfe7f2088c9fcb138dd2b3086
+Commit message: "cast vers integer"
+ > git rev-list --no-walk 6c1ef4ada8874a8bfe7f2088c9fcb138dd2b3086 # timeout=10
+[release-build] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn versions:use-releases clean install versions:use-next-versions -DallowSnapshots=true
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- versions-maven-plugin:2.2:use-releases (default-cli) @ demo ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.2/maven-reporting-impl-2.2.pom
+Progress (1): 2.2/4.7 kBProgress (1): 4.7 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.2/maven-reporting-impl-2.2.pom (4.7 kB at 3.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom
+Progress (1): 2.1/4.0 kBProgress (1): 4.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.1/plexus-utils-2.1.pom (4.0 kB at 31 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.5/wagon-provider-api-2.5.pom
+Progress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.5/wagon-provider-api-2.5.pom (1.7 kB at 17 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/2.5/wagon-2.5.pom
+Progress (1): 2.1/20 kBProgress (1): 4.9/20 kBProgress (1): 7.7/20 kBProgress (1): 10/20 kB Progress (1): 13/20 kBProgress (1): 16/20 kBProgress (1): 19/20 kBProgress (1): 20 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/2.5/wagon-2.5.pom (20 kB at 147 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-file/2.5/wagon-file-2.5.pom
+Progress (1): 1.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-file/2.5/wagon-file-2.5.pom (1.6 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-providers/2.5/wagon-providers-2.5.pom
+Progress (1): 2.1/2.7 kBProgress (1): 2.7 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-providers/2.5/wagon-providers-2.5.pom (2.7 kB at 20 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4/plexus-utils-1.4.pom
+Progress (1): 1.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4/plexus-utils-1.4.pom (1.2 kB at 11 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.pom
+Progress (1): 2.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.pom (2.1 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.pom
+Progress (1): 1.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.pom (1.8 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom
+Progress (1): 962 B                   Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom (962 B at 8.1 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.pom
+Progress (1): 1.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.pom (1.4 kB at 10.0 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.2/maven-reporting-impl-2.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.5/wagon-provider-api-2.5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-file/2.5/wagon-file-2.5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.jar
+Progress (1): 2.1/17 kBProgress (1): 4.9/17 kBProgress (1): 7.6/17 kBProgress (1): 10/17 kB Progress (1): 13/17 kBProgress (1): 16/17 kBProgress (1): 17 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.2/maven-reporting-impl-2.2.jar (17 kB at 41 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar
+Progress (1): 2.1/53 kBProgress (1): 4.9/53 kBProgress (1): 7.7/53 kBProgress (2): 7.7/53 kB | 2.1/482 kBProgress (2): 7.7/53 kB | 4.9/482 kBProgress (2): 7.7/53 kB | 7.7/482 kBProgress (3): 7.7/53 kB | 7.7/482 kB | 2.1/11 kBProgress (3): 7.7/53 kB | 7.7/482 kB | 4.9/11 kBProgress (3): 7.7/53 kB | 7.7/482 kB | 7.7/11 kBProgress (4): 7.7/53 kB | 7.7/482 kB | 7.7/11 kB | 2.1/12 kBProgress (4): 7.7/53 kB | 7.7/482 kB | 7.7/11 kB | 4.9/12 kBProgress (4): 7.7/53 kB | 7.7/482 kB | 7.7/11 kB | 7.7/12 kBProgress (4): 10/53 kB | 7.7/482 kB | 7.7/11 kB | 7.7/12 kB Progress (4): 13/53 kB | 7.7/482 kB | 7.7/11 kB | 7.7/12 kBProgress (4): 13/53 kB | 10/482 kB | 7.7/11 kB | 7.7/12 kB Progress (4): 13/53 kB | 13/482 kB | 7.7/11 kB | 7.7/12 kBProgress (4): 13/53 kB | 13/482 kB | 10/11 kB | 7.7/12 kB Progress (5): 13/53 kB | 13/482 kB | 10/11 kB | 7.7/12 kB | 2.1/23 kBProgress (5): 13/53 kB | 13/482 kB | 10/11 kB | 7.7/12 kB | 4.9/23 kBProgress (5): 13/53 kB | 13/482 kB | 10/11 kB | 10/12 kB | 4.9/23 kB Progress (5): 13/53 kB | 13/482 kB | 10/11 kB | 12 kB | 4.9/23 kB   Progress (5): 13/53 kB | 16/482 kB | 10/11 kB | 12 kB | 4.9/23 kBProgress (5): 13/53 kB | 16/482 kB | 11 kB | 12 kB | 4.9/23 kB   Progress (5): 16/53 kB | 16/482 kB | 11 kB | 12 kB | 4.9/23 kBProgress (5): 19/53 kB | 16/482 kB | 11 kB | 12 kB | 4.9/23 kBProgress (5): 21/53 kB | 16/482 kB | 11 kB | 12 kB | 4.9/23 kBProgress (5): 21/53 kB | 16/482 kB | 11 kB | 12 kB | 7.7/23 kBProgress (5): 21/53 kB | 16/482 kB | 11 kB | 12 kB | 10/23 kB Progress (5): 21/53 kB | 19/482 kB | 11 kB | 12 kB | 10/23 kBProgress (5): 21/53 kB | 21/482 kB | 11 kB | 12 kB | 10/23 kBProgress (5): 21/53 kB | 24/482 kB | 11 kB | 12 kB | 10/23 kBProgress (5): 21/53 kB | 27/482 kB | 11 kB | 12 kB | 10/23 kBProgress (5): 21/53 kB | 30/482 kB | 11 kB | 12 kB | 10/23 kBProgress (5): 21/53 kB | 30/482 kB | 11 kB | 12 kB | 13/23 kBProgress (5): 21/53 kB | 30/482 kB | 11 kB | 12 kB | 16/23 kBProgress (5): 24/53 kB | 30/482 kB | 11 kB | 12 kB | 16/23 kBProgress (5): 27/53 kB | 30/482 kB | 11 kB | 12 kB | 16/23 kBProgress (5): 30/53 kB | 30/482 kB | 11 kB | 12 kB | 16/23 kBProgress (5): 32/53 kB | 30/482 kB | 11 kB | 12 kB | 16/23 kBProgress (5): 32/53 kB | 30/482 kB | 11 kB | 12 kB | 19/23 kBProgress (5): 32/53 kB | 30/482 kB | 11 kB | 12 kB | 21/23 kBProgress (5): 32/53 kB | 30/482 kB | 11 kB | 12 kB | 23 kB   Progress (5): 32/53 kB | 32/482 kB | 11 kB | 12 kB | 23 kBProgress (5): 36/53 kB | 32/482 kB | 11 kB | 12 kB | 23 kBProgress (5): 40/53 kB | 32/482 kB | 11 kB | 12 kB | 23 kBProgress (5): 44/53 kB | 32/482 kB | 11 kB | 12 kB | 23 kB                                                          Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar (12 kB at 19 kB/s)
+Progress (4): 44/53 kB | 36/482 kB | 11 kB | 23 kBProgress (4): 44/53 kB | 40/482 kB | 11 kB | 23 kBProgress (4): 44/53 kB | 44/482 kB | 11 kB | 23 kBProgress (4): 44/53 kB | 49/482 kB | 11 kB | 23 kB                                                  Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-file/2.5/wagon-file-2.5.jar (11 kB at 18 kB/s)
+Progress (3): 49/53 kB | 49/482 kB | 23 kB                                          Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar (23 kB at 37 kB/s)
+Progress (2): 53/53 kB | 49/482 kBProgress (2): 53 kB | 49/482 kB   Progress (2): 53 kB | 53/482 kBProgress (2): 53 kB | 57/482 kBProgress (2): 53 kB | 61/482 kBProgress (2): 53 kB | 65/482 kBProgress (2): 53 kB | 69/482 kBProgress (2): 53 kB | 73/482 kBProgress (2): 53 kB | 77/482 kBProgress (2): 53 kB | 81/482 kBProgress (3): 53 kB | 81/482 kB | 2.1/182 kBProgress (3): 53 kB | 81/482 kB | 4.9/182 kBProgress (3): 53 kB | 81/482 kB | 7.7/182 kBProgress (3): 53 kB | 81/482 kB | 10/182 kB Progress (3): 53 kB | 81/482 kB | 13/182 kBProgress (4): 53 kB | 81/482 kB | 13/182 kB | 2.1/284 kBProgress (4): 53 kB | 81/482 kB | 13/182 kB | 4.9/284 kBProgress (4): 53 kB | 81/482 kB | 16/182 kB | 4.9/284 kBProgress (4): 53 kB | 81/482 kB | 16/182 kB | 7.6/284 kBProgress (4): 53 kB | 81/482 kB | 16/182 kB | 10/284 kB Progress (4): 53 kB | 81/482 kB | 16/182 kB | 13/284 kBProgress (4): 53 kB | 81/482 kB | 16/182 kB | 16/284 kBProgress (4): 53 kB | 85/482 kB | 16/182 kB | 16/284 kBProgress (4): 53 kB | 89/482 kB | 16/182 kB | 16/284 kBProgress (4): 53 kB | 94/482 kB | 16/182 kB | 16/284 kBProgress (4): 53 kB | 98/482 kB | 16/182 kB | 16/284 kB                                                       Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/2.5/wagon-provider-api-2.5.jar (53 kB at 74 kB/s)
+Progress (3): 102/482 kB | 16/182 kB | 16/284 kBProgress (3): 106/482 kB | 16/182 kB | 16/284 kBProgress (3): 110/482 kB | 16/182 kB | 16/284 kBProgress (3): 114/482 kB | 16/182 kB | 16/284 kBProgress (3): 118/482 kB | 16/182 kB | 16/284 kBProgress (3): 122/482 kB | 16/182 kB | 16/284 kBProgress (3): 126/482 kB | 16/182 kB | 16/284 kBProgress (3): 130/482 kB | 16/182 kB | 16/284 kBProgress (3): 130/482 kB | 19/182 kB | 16/284 kBProgress (3): 135/482 kB | 19/182 kB | 16/284 kBProgress (3): 135/482 kB | 19/182 kB | 19/284 kBProgress (3): 135/482 kB | 19/182 kB | 21/284 kBProgress (3): 135/482 kB | 19/182 kB | 24/284 kBProgress (3): 135/482 kB | 19/182 kB | 27/284 kBProgress (3): 135/482 kB | 19/182 kB | 30/284 kBProgress (3): 135/482 kB | 19/182 kB | 32/284 kBProgress (3): 135/482 kB | 21/182 kB | 32/284 kBProgress (3): 135/482 kB | 24/182 kB | 32/284 kBProgress (3): 135/482 kB | 27/182 kB | 32/284 kBProgress (3): 135/482 kB | 30/182 kB | 32/284 kBProgress (3): 135/482 kB | 32/182 kB | 32/284 kBProgress (3): 139/482 kB | 32/182 kB | 32/284 kBProgress (3): 143/482 kB | 32/182 kB | 32/284 kBProgress (3): 147/482 kB | 32/182 kB | 32/284 kBProgress (3): 151/482 kB | 32/182 kB | 32/284 kBProgress (3): 155/482 kB | 32/182 kB | 32/284 kBProgress (3): 159/482 kB | 32/182 kB | 32/284 kBProgress (3): 163/482 kB | 32/182 kB | 32/284 kBProgress (3): 167/482 kB | 32/182 kB | 32/284 kBProgress (3): 171/482 kB | 32/182 kB | 32/284 kBProgress (3): 176/482 kB | 32/182 kB | 32/284 kBProgress (3): 180/482 kB | 32/182 kB | 32/284 kBProgress (3): 184/482 kB | 32/182 kB | 32/284 kBProgress (3): 188/482 kB | 32/182 kB | 32/284 kBProgress (3): 192/482 kB | 32/182 kB | 32/284 kBProgress (3): 196/482 kB | 32/182 kB | 32/284 kBProgress (3): 200/482 kB | 32/182 kB | 32/284 kBProgress (3): 204/482 kB | 32/182 kB | 32/284 kBProgress (3): 208/482 kB | 32/182 kB | 32/284 kBProgress (3): 212/482 kB | 32/182 kB | 32/284 kBProgress (3): 216/482 kB | 32/182 kB | 32/284 kBProgress (3): 221/482 kB | 32/182 kB | 32/284 kBProgress (3): 225/482 kB | 32/182 kB | 32/284 kBProgress (3): 229/482 kB | 32/182 kB | 32/284 kBProgress (3): 233/482 kB | 32/182 kB | 32/284 kBProgress (3): 237/482 kB | 32/182 kB | 32/284 kBProgress (3): 241/482 kB | 32/182 kB | 32/284 kBProgress (3): 245/482 kB | 32/182 kB | 32/284 kBProgress (3): 245/482 kB | 36/182 kB | 32/284 kBProgress (3): 245/482 kB | 40/182 kB | 32/284 kBProgress (3): 245/482 kB | 44/182 kB | 32/284 kBProgress (3): 245/482 kB | 49/182 kB | 32/284 kBProgress (3): 245/482 kB | 49/182 kB | 36/284 kBProgress (3): 245/482 kB | 49/182 kB | 40/284 kBProgress (3): 245/482 kB | 49/182 kB | 44/284 kBProgress (3): 245/482 kB | 49/182 kB | 49/284 kBProgress (3): 245/482 kB | 49/182 kB | 53/284 kBProgress (3): 245/482 kB | 49/182 kB | 57/284 kBProgress (3): 245/482 kB | 49/182 kB | 61/284 kBProgress (3): 245/482 kB | 49/182 kB | 65/284 kBProgress (3): 249/482 kB | 49/182 kB | 65/284 kBProgress (3): 253/482 kB | 49/182 kB | 65/284 kBProgress (3): 257/482 kB | 49/182 kB | 65/284 kBProgress (3): 262/482 kB | 49/182 kB | 65/284 kBProgress (3): 266/482 kB | 49/182 kB | 65/284 kBProgress (3): 270/482 kB | 49/182 kB | 65/284 kBProgress (3): 274/482 kB | 49/182 kB | 65/284 kBProgress (3): 278/482 kB | 49/182 kB | 65/284 kBProgress (3): 278/482 kB | 49/182 kB | 69/284 kBProgress (3): 278/482 kB | 49/182 kB | 73/284 kBProgress (3): 278/482 kB | 49/182 kB | 77/284 kBProgress (3): 278/482 kB | 49/182 kB | 81/284 kBProgress (3): 282/482 kB | 49/182 kB | 81/284 kBProgress (3): 286/482 kB | 49/182 kB | 81/284 kBProgress (3): 290/482 kB | 49/182 kB | 81/284 kBProgress (3): 294/482 kB | 49/182 kB | 81/284 kBProgress (3): 298/482 kB | 49/182 kB | 81/284 kBProgress (3): 302/482 kB | 49/182 kB | 81/284 kBProgress (3): 307/482 kB | 49/182 kB | 81/284 kBProgress (3): 311/482 kB | 49/182 kB | 81/284 kBProgress (3): 315/482 kB | 49/182 kB | 81/284 kBProgress (3): 319/482 kB | 49/182 kB | 81/284 kBProgress (3): 323/482 kB | 49/182 kB | 81/284 kBProgress (3): 327/482 kB | 49/182 kB | 81/284 kBProgress (3): 331/482 kB | 49/182 kB | 81/284 kBProgress (3): 335/482 kB | 49/182 kB | 81/284 kBProgress (3): 339/482 kB | 49/182 kB | 81/284 kBProgress (3): 343/482 kB | 49/182 kB | 81/284 kBProgress (3): 348/482 kB | 49/182 kB | 81/284 kBProgress (3): 352/482 kB | 49/182 kB | 81/284 kBProgress (3): 356/482 kB | 49/182 kB | 81/284 kBProgress (3): 360/482 kB | 49/182 kB | 81/284 kBProgress (3): 364/482 kB | 49/182 kB | 81/284 kBProgress (3): 368/482 kB | 49/182 kB | 81/284 kBProgress (3): 372/482 kB | 49/182 kB | 81/284 kBProgress (3): 376/482 kB | 49/182 kB | 81/284 kBProgress (3): 380/482 kB | 49/182 kB | 81/284 kBProgress (3): 384/482 kB | 49/182 kB | 81/284 kBProgress (3): 388/482 kB | 49/182 kB | 81/284 kBProgress (3): 393/482 kB | 49/182 kB | 81/284 kBProgress (3): 397/482 kB | 49/182 kB | 81/284 kBProgress (3): 401/482 kB | 49/182 kB | 81/284 kBProgress (3): 405/482 kB | 49/182 kB | 81/284 kBProgress (3): 409/482 kB | 49/182 kB | 81/284 kBProgress (3): 413/482 kB | 49/182 kB | 81/284 kBProgress (3): 417/482 kB | 49/182 kB | 81/284 kBProgress (3): 421/482 kB | 49/182 kB | 81/284 kBProgress (3): 425/482 kB | 49/182 kB | 81/284 kBProgress (3): 429/482 kB | 49/182 kB | 81/284 kBProgress (3): 434/482 kB | 49/182 kB | 81/284 kBProgress (3): 438/482 kB | 49/182 kB | 81/284 kBProgress (3): 442/482 kB | 49/182 kB | 81/284 kBProgress (3): 446/482 kB | 49/182 kB | 81/284 kBProgress (3): 450/482 kB | 49/182 kB | 81/284 kBProgress (3): 454/482 kB | 49/182 kB | 81/284 kBProgress (3): 458/482 kB | 49/182 kB | 81/284 kBProgress (3): 458/482 kB | 53/182 kB | 81/284 kBProgress (3): 458/482 kB | 57/182 kB | 81/284 kBProgress (3): 458/482 kB | 61/182 kB | 81/284 kBProgress (3): 458/482 kB | 65/182 kB | 81/284 kBProgress (3): 458/482 kB | 69/182 kB | 81/284 kBProgress (3): 458/482 kB | 73/182 kB | 81/284 kBProgress (3): 458/482 kB | 77/182 kB | 81/284 kBProgress (3): 458/482 kB | 81/182 kB | 81/284 kBProgress (3): 458/482 kB | 81/182 kB | 85/284 kBProgress (3): 458/482 kB | 81/182 kB | 89/284 kBProgress (3): 458/482 kB | 81/182 kB | 94/284 kBProgress (3): 458/482 kB | 81/182 kB | 98/284 kBProgress (3): 458/482 kB | 81/182 kB | 102/284 kBProgress (3): 458/482 kB | 81/182 kB | 106/284 kBProgress (3): 458/482 kB | 81/182 kB | 110/284 kBProgress (3): 458/482 kB | 81/182 kB | 114/284 kBProgress (3): 458/482 kB | 81/182 kB | 118/284 kBProgress (3): 458/482 kB | 81/182 kB | 122/284 kBProgress (3): 458/482 kB | 81/182 kB | 126/284 kBProgress (3): 458/482 kB | 81/182 kB | 130/284 kBProgress (3): 462/482 kB | 81/182 kB | 130/284 kBProgress (3): 466/482 kB | 81/182 kB | 130/284 kBProgress (3): 470/482 kB | 81/182 kB | 130/284 kBProgress (3): 475/482 kB | 81/182 kB | 130/284 kBProgress (3): 479/482 kB | 81/182 kB | 130/284 kBProgress (3): 482 kB | 81/182 kB | 130/284 kB    Progress (3): 482 kB | 81/182 kB | 135/284 kBProgress (3): 482 kB | 81/182 kB | 139/284 kBProgress (3): 482 kB | 81/182 kB | 143/284 kBProgress (3): 482 kB | 81/182 kB | 147/284 kBProgress (3): 482 kB | 85/182 kB | 147/284 kBProgress (3): 482 kB | 89/182 kB | 147/284 kBProgress (3): 482 kB | 94/182 kB | 147/284 kBProgress (3): 482 kB | 98/182 kB | 147/284 kBProgress (3): 482 kB | 102/182 kB | 147/284 kBProgress (3): 482 kB | 106/182 kB | 147/284 kBProgress (3): 482 kB | 110/182 kB | 147/284 kBProgress (3): 482 kB | 114/182 kB | 147/284 kBProgress (3): 482 kB | 118/182 kB | 147/284 kBProgress (3): 482 kB | 122/182 kB | 147/284 kBProgress (3): 482 kB | 126/182 kB | 147/284 kBProgress (3): 482 kB | 130/182 kB | 147/284 kBProgress (3): 482 kB | 135/182 kB | 147/284 kBProgress (3): 482 kB | 139/182 kB | 147/284 kBProgress (3): 482 kB | 143/182 kB | 147/284 kBProgress (3): 482 kB | 147/182 kB | 147/284 kBProgress (3): 482 kB | 147/182 kB | 151/284 kBProgress (3): 482 kB | 147/182 kB | 155/284 kBProgress (3): 482 kB | 147/182 kB | 159/284 kBProgress (3): 482 kB | 147/182 kB | 163/284 kBProgress (3): 482 kB | 147/182 kB | 167/284 kBProgress (3): 482 kB | 147/182 kB | 171/284 kBProgress (3): 482 kB | 147/182 kB | 175/284 kBProgress (3): 482 kB | 147/182 kB | 180/284 kBProgress (3): 482 kB | 147/182 kB | 184/284 kBProgress (3): 482 kB | 147/182 kB | 188/284 kBProgress (3): 482 kB | 147/182 kB | 192/284 kBProgress (3): 482 kB | 147/182 kB | 196/284 kBProgress (3): 482 kB | 147/182 kB | 200/284 kBProgress (3): 482 kB | 147/182 kB | 204/284 kBProgress (3): 482 kB | 147/182 kB | 208/284 kBProgress (3): 482 kB | 147/182 kB | 212/284 kBProgress (3): 482 kB | 147/182 kB | 216/284 kBProgress (3): 482 kB | 147/182 kB | 221/284 kBProgress (3): 482 kB | 147/182 kB | 225/284 kBProgress (3): 482 kB | 147/182 kB | 229/284 kBProgress (3): 482 kB | 147/182 kB | 233/284 kBProgress (3): 482 kB | 147/182 kB | 237/284 kBProgress (3): 482 kB | 147/182 kB | 241/284 kBProgress (3): 482 kB | 147/182 kB | 245/284 kBProgress (3): 482 kB | 147/182 kB | 249/284 kBProgress (3): 482 kB | 147/182 kB | 253/284 kBProgress (3): 482 kB | 147/182 kB | 257/284 kBProgress (3): 482 kB | 147/182 kB | 262/284 kBProgress (3): 482 kB | 147/182 kB | 266/284 kBProgress (3): 482 kB | 147/182 kB | 270/284 kBProgress (3): 482 kB | 147/182 kB | 274/284 kBProgress (3): 482 kB | 147/182 kB | 278/284 kBProgress (3): 482 kB | 151/182 kB | 278/284 kBProgress (3): 482 kB | 155/182 kB | 278/284 kBProgress (3): 482 kB | 159/182 kB | 278/284 kBProgress (3): 482 kB | 163/182 kB | 278/284 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.jar (482 kB at 390 kB/s)
+Progress (2): 163/182 kB | 282/284 kBProgress (2): 163/182 kB | 284 kB    Progress (2): 167/182 kB | 284 kBProgress (2): 171/182 kB | 284 kBProgress (2): 176/182 kB | 284 kBProgress (2): 180/182 kB | 284 kBProgress (2): 182 kB | 284 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar (284 kB at 222 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.jar (182 kB at 141 kB/s)
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ demo ---
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ demo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/release-build/target/classes
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/release-build/src/test/resources
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ demo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/release-build/target/test-classes
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ demo ---
+[INFO] Surefire report directory: /var/jenkins_home/workspace/release-build/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+12:53:40.189 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+12:53:40.215 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:53:40.258 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:53:40.336 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:53:40.402 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
+12:53:40.412 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
+12:53:40.418 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
+12:53:40.418 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:53:40.427 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:53:40.618 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
+12:53:40.653 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+12:53:40.658 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+12:53:40.661 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+12:53:40.680 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/example/] to resources [URL [file:/var/jenkins_home/workspace/release-build/target/test-classes/com/example/], URL [file:/var/jenkins_home/workspace/release-build/target/classes/com/example/]]
+12:53:40.681 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/var/jenkins_home/workspace/release-build/target/test-classes/com/example]
+12:53:40.681 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/var/jenkins_home/workspace/release-build/target/test-classes/com/example] for files matching pattern [/var/jenkins_home/workspace/release-build/target/test-classes/com/example/*.class]
+12:53:40.685 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/var/jenkins_home/workspace/release-build/target/classes/com/example]
+12:53:40.685 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/var/jenkins_home/workspace/release-build/target/classes/com/example] for files matching pattern [/var/jenkins_home/workspace/release-build/target/classes/com/example/*.class]
+12:53:40.686 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/example/*.class] to resources [file [/var/jenkins_home/workspace/release-build/target/test-classes/com/example/DemoApplicationTests.class], file [/var/jenkins_home/workspace/release-build/target/classes/com/example/DemoApplication.class]]
+12:53:40.817 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/var/jenkins_home/workspace/release-build/target/classes/com/example/DemoApplication.class]
+12:53:40.819 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.DemoApplicationTests
+12:53:40.833 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.DemoApplicationTests]: using defaults.
+12:53:40.863 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:53:40.907 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+12:53:40.909 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+12:53:40.913 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+12:53:40.913 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@67b467e9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47db50c5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c072e3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4d1b0d2a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@954b04f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@149494d8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@710726a3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@646007f4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@481a15ff]
+12:53:40.929 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+12:53:40.930 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+Running com.example.DemoApplicationTests
+12:53:40.944 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+12:53:40.944 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:53:40.944 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:53:40.948 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:53:40.949 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
+12:53:40.950 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
+12:53:40.950 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
+12:53:40.951 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:53:40.952 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:53:40.964 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
+12:53:40.965 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+12:53:40.965 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+12:53:40.965 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+12:53:40.965 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.DemoApplicationTests
+12:53:40.971 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.DemoApplicationTests]: using defaults.
+12:53:40.980 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:53:40.983 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+12:53:40.985 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+12:53:40.991 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+12:53:40.992 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2698dc7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@43d7741f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@17baae6e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69379752, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27fe3806, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5f71c76a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d7acb34, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@48a242ce, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e4a7dd4]
+12:53:41.001 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+12:53:41.001 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+12:53:41.002 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+12:53:41.003 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+12:53:41.021 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2bea5ab4 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3d8314f0 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1ce92674, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5bcab519, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@60c6f5b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+12:53:41.022 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+12:53:41.022 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+12:53:41.022 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2bea5ab4 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@70a9f84e, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3d8314f0 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1ce92674, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5bcab519, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@60c6f5b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+12:53:41.238 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+12:53:41.239 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+12:53:41.239 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+12:53:41.241 [main] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
+12:53:41.251 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+12:53:41.251 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2018-03-22 12:53:42.151  INFO 6984 --- [           main] com.example.DemoApplicationTests         : Starting DemoApplicationTests on 00fa59366afa with PID 6984 (started by jenkins in /var/jenkins_home/workspace/release-build)
+2018-03-22 12:53:42.158  INFO 6984 --- [           main] com.example.DemoApplicationTests         : No active profile set, falling back to default profiles: default
+2018-03-22 12:53:42.244  INFO 6984 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d8704ef: startup date [Thu Mar 22 12:53:42 UTC 2018]; root of context hierarchy
+2018-03-22 12:53:43.443  INFO 6984 --- [           main] com.example.DemoApplicationTests         : Started DemoApplicationTests in 2.188 seconds (JVM running for 4.176)
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.683 sec - in com.example.DemoApplicationTests
+2018-03-22 12:53:43.652  INFO 6984 --- [       Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d8704ef: startup date [Thu Mar 22 12:53:42 UTC 2018]; root of context hierarchy
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ demo ---
+[INFO] Building jar: /var/jenkins_home/workspace/release-build/target/demo-0.0.1-SNAPSHOT.jar
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:1.5.3.RELEASE:repackage (default) @ demo ---
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ demo ---
+[INFO] Installing /var/jenkins_home/workspace/release-build/target/demo-0.0.1-SNAPSHOT.jar to /var/jenkins_home/.m2/repository/com/example/demo/0.0.1-SNAPSHOT/demo-0.0.1-SNAPSHOT.jar
+[INFO] Installing /var/jenkins_home/workspace/release-build/pom.xml to /var/jenkins_home/.m2/repository/com/example/demo/0.0.1-SNAPSHOT/demo-0.0.1-SNAPSHOT.pom
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- versions-maven-plugin:2.2:use-next-versions (default-cli) @ demo ---
+[INFO] artifact org.springframework:spring-core: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-test: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-test-autoconfigure: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-actuator: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-actuator-docs: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-autoconfigure: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-autoconfigure-processor: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-configuration-metadata: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-configuration-processor: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-devtools: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-loader: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-loader-tools: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-activemq: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-actuator: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-amqp: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-aop: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-artemis: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-batch: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-cache: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-cloud-connectors: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-cassandra: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-couchbase: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-elasticsearch: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-gemfire: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-jpa: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-ldap: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-mongodb: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-redis: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-neo4j: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-rest: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-data-solr: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-freemarker: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-groovy-templates: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-hateoas: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-integration: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-jdbc: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-jersey: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-jetty: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-jooq: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-jta-atomikos: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-jta-bitronix: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-undertow: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-log4j2: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-logging: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-mail: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-mobile: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-mustache: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-jta-narayana: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-remote-shell: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-security: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-social-facebook: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-social-linkedin: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-social-twitter: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-test: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-thymeleaf: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-tomcat: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-validation: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-web: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-websocket: checking for updates from central
+[INFO] artifact org.springframework.boot:spring-boot-starter-web-services: checking for updates from central
+[INFO] artifact antlr:antlr: checking for updates from central
+[INFO] artifact ch.qos.logback:logback-access: checking for updates from central
+[INFO] artifact ch.qos.logback:logback-classic: checking for updates from central
+[INFO] artifact ch.qos.logback:logback-core: checking for updates from central
+[INFO] artifact com.atomikos:transactions-jdbc: checking for updates from central
+[INFO] artifact com.atomikos:transactions-jms: checking for updates from central
+[INFO] artifact com.atomikos:transactions-jta: checking for updates from central
+[INFO] artifact com.couchbase.client:java-client: checking for updates from central
+[INFO] artifact com.couchbase.client:couchbase-spring-cache: checking for updates from central
+[INFO] artifact com.datastax.cassandra:cassandra-driver-core: checking for updates from central
+[INFO] artifact com.datastax.cassandra:cassandra-driver-mapping: checking for updates from central
+[INFO] artifact com.fasterxml:classmate: checking for updates from central
+[INFO] artifact com.gemstone.gemfire:gemfire: checking for updates from central
+[INFO] artifact com.github.ben-manes.caffeine:caffeine: checking for updates from central
+[INFO] artifact com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute: checking for updates from central
+[INFO] artifact com.google.appengine:appengine-api-1.0-sdk: checking for updates from central
+[INFO] artifact com.google.code.gson:gson: checking for updates from central
+[INFO] artifact com.googlecode.json-simple:json-simple: checking for updates from central
+[INFO] artifact com.h2database:h2: checking for updates from central
+[INFO] artifact com.hazelcast:hazelcast: checking for updates from central
+[INFO] artifact com.hazelcast:hazelcast-client: checking for updates from central
+[INFO] artifact com.hazelcast:hazelcast-hibernate4: checking for updates from central
+[INFO] artifact com.hazelcast:hazelcast-hibernate5: checking for updates from central
+[INFO] artifact com.hazelcast:hazelcast-spring: checking for updates from central
+[INFO] artifact com.jayway.jsonpath:json-path: checking for updates from central
+[INFO] artifact com.jayway.jsonpath:json-path-assert: checking for updates from central
+[INFO] artifact com.microsoft.sqlserver:mssql-jdbc: checking for updates from central
+[INFO] artifact com.querydsl:querydsl-apt: checking for updates from central
+[INFO] artifact com.querydsl:querydsl-collections: checking for updates from central
+[INFO] artifact com.querydsl:querydsl-core: checking for updates from central
+[INFO] artifact com.querydsl:querydsl-jpa: checking for updates from central
+[INFO] artifact com.querydsl:querydsl-mongodb: checking for updates from central
+[INFO] artifact com.samskivert:jmustache: checking for updates from central
+[INFO] artifact com.sendgrid:sendgrid-java: checking for updates from central
+[INFO] artifact com.sun.mail:javax.mail: checking for updates from central
+[INFO] artifact com.timgroup:java-statsd-client: checking for updates from central
+[8mha:////4Dx9SeYcD+Xpo40aJfaLuozeoY0XeMe8DJPI2/N/opDzAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] *** CHECKSUM FAILED - Checksum failed on download: local = '0b31bbe826f73090a058ded5e376b7be771c3f49'; remote = '5572da9cc70dd0ecfc196f50480710702cceea32' - RETRYING
+[8mha:////4Dx9SeYcD+Xpo40aJfaLuozeoY0XeMe8DJPI2/N/opDzAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] *** CHECKSUM FAILED - Checksum failed on download: local = '0b31bbe826f73090a058ded5e376b7be771c3f49'; remote = '5572da9cc70dd0ecfc196f50480710702cceea32' - IGNORING
+[INFO] artifact com.unboundid:unboundid-ldapsdk: checking for updates from central
+[INFO] artifact com.zaxxer:HikariCP: checking for updates from central
+[INFO] artifact com.zaxxer:HikariCP-java6: checking for updates from central
+[INFO] artifact com.zaxxer:HikariCP-java7: checking for updates from central
+[INFO] artifact commons-beanutils:commons-beanutils: checking for updates from central
+[INFO] artifact commons-collections:commons-collections: checking for updates from central
+[INFO] artifact commons-codec:commons-codec: checking for updates from central
+[INFO] artifact commons-dbcp:commons-dbcp: checking for updates from central
+[INFO] artifact commons-digester:commons-digester: checking for updates from central
+[INFO] artifact commons-pool:commons-pool: checking for updates from central
+[INFO] artifact de.flapdoodle.embed:de.flapdoodle.embed.mongo: checking for updates from central
+[INFO] artifact dom4j:dom4j: checking for updates from central
+[INFO] artifact io.dropwizard.metrics:metrics-core: checking for updates from central
+[INFO] artifact io.dropwizard.metrics:metrics-ganglia: checking for updates from central
+[INFO] artifact io.dropwizard.metrics:metrics-graphite: checking for updates from central
+[INFO] artifact io.dropwizard.metrics:metrics-servlets: checking for updates from central
+[INFO] artifact io.projectreactor:reactor-bus: checking for updates from central
+[INFO] artifact io.projectreactor:reactor-core: checking for updates from central
+[INFO] artifact io.projectreactor:reactor-groovy: checking for updates from central
+[INFO] artifact io.projectreactor:reactor-groovy-extensions: checking for updates from central
+[INFO] artifact io.projectreactor:reactor-logback: checking for updates from central
+[INFO] artifact io.projectreactor:reactor-net: checking for updates from central
+[INFO] artifact io.projectreactor:reactor-stream: checking for updates from central
+[INFO] artifact io.projectreactor.spring:reactor-spring-context: checking for updates from central
+[INFO] artifact io.projectreactor.spring:reactor-spring-core: checking for updates from central
+[INFO] artifact io.projectreactor.spring:reactor-spring-messaging: checking for updates from central
+[INFO] artifact io.projectreactor.spring:reactor-spring-webmvc: checking for updates from central
+[INFO] artifact io.searchbox:jest: checking for updates from central
+[INFO] artifact io.undertow:undertow-core: checking for updates from central
+[INFO] artifact io.undertow:undertow-servlet: checking for updates from central
+[INFO] artifact io.undertow:undertow-websockets-jsr: checking for updates from central
+[INFO] artifact javax.cache:cache-api: checking for updates from central
+[INFO] artifact javax.jms:jms-api: checking for updates from central
+[INFO] artifact javax.mail:javax.mail-api: checking for updates from central
+[INFO] artifact javax.servlet:javax.servlet-api: checking for updates from central
+[INFO] artifact javax.servlet:jstl: checking for updates from central
+[INFO] artifact javax.transaction:javax.transaction-api: checking for updates from central
+[INFO] artifact javax.validation:validation-api: checking for updates from central
+[INFO] artifact jaxen:jaxen: checking for updates from central
+[INFO] artifact joda-time:joda-time: checking for updates from central
+[INFO] artifact junit:junit: checking for updates from central
+[INFO] artifact mysql:mysql-connector-java: checking for updates from central
+[INFO] artifact net.java.dev.jna:jna: checking for updates from central
+[INFO] artifact net.sf.ehcache:ehcache: checking for updates from central
+[INFO] artifact net.sourceforge.htmlunit:htmlunit: checking for updates from central
+[INFO] artifact net.sourceforge.jtds:jtds: checking for updates from central
+[INFO] artifact net.sourceforge.nekohtml:nekohtml: checking for updates from central
+[INFO] artifact nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-amqp: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-blueprint: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-broker: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-camel: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-client: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-console: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-http: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-jaas: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-jdbc-store: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-jms-pool: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-kahadb-store: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-karaf: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-leveldb-store: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-log4j-appender: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-mqtt: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-openwire-generator: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-openwire-legacy: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-osgi: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-partition: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-pool: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-ra: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-run: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-runtime-config: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-shiro: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-spring: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-stomp: checking for updates from central
+[INFO] artifact org.apache.activemq:activemq-web: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-amqp-protocol: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-commons: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-core-client: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-jms-client: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-jms-server: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-journal: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-native: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-selector: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-server: checking for updates from central
+[INFO] artifact org.apache.activemq:artemis-service-extensions: checking for updates from central
+[INFO] artifact org.apache.commons:commons-dbcp2: checking for updates from central
+[INFO] artifact org.apache.commons:commons-pool2: checking for updates from central
+[INFO] artifact org.apache.derby:derby: checking for updates from central
+[INFO] artifact org.apache.httpcomponents:httpasyncclient: checking for updates from central
+[INFO] artifact org.apache.httpcomponents:httpclient: checking for updates from central
+[INFO] artifact org.apache.httpcomponents:httpcore: checking for updates from central
+[INFO] artifact org.apache.httpcomponents:httpmime: checking for updates from central
+[INFO] artifact org.apache.solr:solr-solrj: checking for updates from central
+[INFO] artifact org.apache.tomcat.embed:tomcat-embed-core: checking for updates from central
+[INFO] artifact org.apache.tomcat.embed:tomcat-embed-el: checking for updates from central
+[INFO] artifact org.apache.tomcat.embed:tomcat-embed-jasper: checking for updates from central
+[INFO] artifact org.apache.tomcat.embed:tomcat-embed-websocket: checking for updates from central
+[INFO] artifact org.apache.tomcat:tomcat-jdbc: checking for updates from central
+[INFO] artifact org.apache.tomcat:tomcat-jsp-api: checking for updates from central
+[INFO] artifact org.aspectj:aspectjrt: checking for updates from central
+[INFO] artifact org.aspectj:aspectjtools: checking for updates from central
+[INFO] artifact org.aspectj:aspectjweaver: checking for updates from central
+[INFO] artifact org.assertj:assertj-core: checking for updates from central
+[INFO] artifact org.codehaus.btm:btm: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-all: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-ant: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-bsf: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-console: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-docgenerator: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-groovydoc: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-groovysh: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-jmx: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-json: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-jsr223: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-nio: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-servlet: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-sql: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-swing: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-templates: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-test: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-testng: checking for updates from central
+[INFO] artifact org.codehaus.groovy:groovy-xml: checking for updates from central
+[INFO] artifact org.codehaus.janino:janino: checking for updates from central
+[INFO] artifact org.crashub:crash.cli: checking for updates from central
+[INFO] artifact org.crashub:crash.connectors.ssh: checking for updates from central
+[INFO] artifact org.crashub:crash.connectors.telnet: checking for updates from central
+[INFO] artifact org.crashub:crash.embed.spring: checking for updates from central
+[INFO] artifact org.crashub:crash.plugins.cron: checking for updates from central
+[INFO] artifact org.crashub:crash.plugins.mail: checking for updates from central
+[INFO] artifact org.crashub:crash.shell: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-annotations: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-client: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-continuation: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-deploy: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-http: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-io: checking for updates from central
+[INFO] artifact org.eclipse.jetty:apache-jstl: checking for updates from central
+[INFO] artifact org.eclipse.jetty:apache-jsp: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-jmx: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-plus: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-proxy: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-security: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-server: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-servlet: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-servlets: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-util: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-webapp: checking for updates from central
+[INFO] artifact org.eclipse.jetty:jetty-xml: checking for updates from central
+[INFO] artifact org.eclipse.jetty.orbit:javax.servlet.jsp: checking for updates from central
+[INFO] artifact org.eclipse.jetty.websocket:javax-websocket-server-impl: checking for updates from central
+[INFO] artifact org.eclipse.jetty.websocket:websocket-client: checking for updates from central
+[INFO] artifact org.eclipse.jetty.websocket:websocket-server: checking for updates from central
+[INFO] artifact org.ehcache:ehcache: checking for updates from central
+[INFO] artifact org.ehcache:ehcache-clustered: checking for updates from central
+[INFO] artifact org.ehcache:ehcache-transactions: checking for updates from central
+[INFO] artifact org.elasticsearch:elasticsearch: checking for updates from central
+[INFO] artifact org.firebirdsql.jdbc:jaybird-jdk16: checking for updates from central
+[INFO] artifact org.firebirdsql.jdbc:jaybird-jdk17: checking for updates from central
+[INFO] artifact org.firebirdsql.jdbc:jaybird-jdk18: checking for updates from central
+[INFO] artifact org.flywaydb:flyway-core: checking for updates from central
+[INFO] artifact org.freemarker:freemarker: checking for updates from central
+[INFO] artifact org.glassfish:javax.el: checking for updates from central
+[INFO] artifact org.glassfish.jersey.containers:jersey-container-servlet: checking for updates from central
+[INFO] artifact org.glassfish.jersey.containers:jersey-container-servlet-core: checking for updates from central
+[INFO] artifact org.glassfish.jersey.core:jersey-server: checking for updates from central
+[INFO] artifact org.glassfish.jersey.ext:jersey-bean-validation: checking for updates from central
+[INFO] artifact org.glassfish.jersey.ext:jersey-spring3: checking for updates from central
+[INFO] artifact org.glassfish.jersey.media:jersey-media-json-jackson: checking for updates from central
+[INFO] artifact org.hamcrest:hamcrest-core: checking for updates from central
+[INFO] artifact org.hamcrest:hamcrest-library: checking for updates from central
+[INFO] artifact org.hibernate:hibernate-core: checking for updates from central
+[INFO] artifact org.hibernate:hibernate-ehcache: checking for updates from central
+[INFO] artifact org.hibernate:hibernate-entitymanager: checking for updates from central
+[INFO] artifact org.hibernate:hibernate-envers: checking for updates from central
+[INFO] artifact org.hibernate:hibernate-java8: checking for updates from central
+[INFO] artifact org.hibernate:hibernate-jpamodelgen: checking for updates from central
+[INFO] artifact org.hibernate:hibernate-validator: checking for updates from central
+[INFO] artifact org.hibernate:hibernate-validator-annotation-processor: checking for updates from central
+[INFO] artifact org.hsqldb:hsqldb: checking for updates from central
+[INFO] artifact org.infinispan:infinispan-jcache: checking for updates from central
+[INFO] artifact org.infinispan:infinispan-spring4-common: checking for updates from central
+[INFO] artifact org.infinispan:infinispan-spring4-embedded: checking for updates from central
+[INFO] artifact org.javassist:javassist: checking for updates from central
+[INFO] artifact org.jboss:jboss-transaction-spi: checking for updates from central
+[INFO] artifact org.jboss.logging:jboss-logging: checking for updates from central
+[INFO] artifact org.jboss.narayana.jta:jdbc: checking for updates from central
+[INFO] artifact org.jboss.narayana.jta:jms: checking for updates from central
+[INFO] artifact org.jboss.narayana.jta:jta: checking for updates from central
+[INFO] artifact org.jboss.narayana.jts:narayana-jts-integration: checking for updates from central
+[INFO] artifact org.jdom:jdom2: checking for updates from central
+[8mha:////4Dx9SeYcD+Xpo40aJfaLuozeoY0XeMe8DJPI2/N/opDzAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] *** CHECKSUM FAILED - Checksum failed on download: local = 'ac2dce4e6ccb40db75b9c44af021f5666519b46e'; remote = '15f51ac5d3e48561f1672ec9802f9e5781b2aa1e' - RETRYING
+[8mha:////4Dx9SeYcD+Xpo40aJfaLuozeoY0XeMe8DJPI2/N/opDzAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] *** CHECKSUM FAILED - Checksum failed on download: local = 'ac2dce4e6ccb40db75b9c44af021f5666519b46e'; remote = '15f51ac5d3e48561f1672ec9802f9e5781b2aa1e' - IGNORING
+[INFO] artifact org.jolokia:jolokia-core: checking for updates from central
+[INFO] artifact org.json:json: checking for updates from central
+[INFO] artifact org.jooq:jooq: checking for updates from central
+[INFO] artifact org.jooq:jooq-meta: checking for updates from central
+[INFO] artifact org.jooq:jooq-codegen: checking for updates from central
+[INFO] artifact org.liquibase:liquibase-core: checking for updates from central
+[INFO] artifact org.mariadb.jdbc:mariadb-java-client: checking for updates from central
+[INFO] artifact org.mockito:mockito-core: checking for updates from central
+[INFO] artifact org.mongodb:mongodb-driver: checking for updates from central
+[INFO] artifact org.mongodb:mongo-java-driver: checking for updates from central
+[INFO] artifact org.mortbay.jasper:apache-el: checking for updates from central
+[INFO] artifact org.neo4j:neo4j-ogm-api: checking for updates from central
+[INFO] artifact org.neo4j:neo4j-ogm-compiler: checking for updates from central
+[INFO] artifact org.neo4j:neo4j-ogm-core: checking for updates from central
+[INFO] artifact org.neo4j:neo4j-ogm-http-driver: checking for updates from central
+[INFO] artifact org.postgresql:postgresql: checking for updates from central
+[INFO] artifact org.projectlombok:lombok: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:htmlunit-driver: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:selenium-api: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:selenium-chrome-driver: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:selenium-firefox-driver: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:selenium-ie-driver: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:selenium-java: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:selenium-remote-driver: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:selenium-safari-driver: checking for updates from central
+[INFO] artifact org.seleniumhq.selenium:selenium-support: checking for updates from central
+[INFO] artifact org.skyscreamer:jsonassert: checking for updates from central
+[INFO] artifact org.slf4j:jcl-over-slf4j: checking for updates from central
+[INFO] artifact org.slf4j:jul-to-slf4j: checking for updates from central
+[INFO] artifact org.slf4j:log4j-over-slf4j: checking for updates from central
+[INFO] artifact org.slf4j:slf4j-api: checking for updates from central
+[INFO] artifact org.slf4j:slf4j-jdk14: checking for updates from central
+[INFO] artifact org.slf4j:slf4j-log4j12: checking for updates from central
+[INFO] artifact org.slf4j:slf4j-simple: checking for updates from central
+[INFO] artifact org.spockframework:spock-core: checking for updates from central
+[INFO] artifact org.spockframework:spock-spring: checking for updates from central
+[INFO] artifact org.springframework:springloaded: checking for updates from central
+[INFO] artifact org.springframework.amqp:spring-amqp: checking for updates from central
+[INFO] artifact org.springframework.amqp:spring-rabbit: checking for updates from central
+[INFO] artifact org.springframework.batch:spring-batch-core: checking for updates from central
+[INFO] artifact org.springframework.batch:spring-batch-infrastructure: checking for updates from central
+[INFO] artifact org.springframework.batch:spring-batch-integration: checking for updates from central
+[INFO] artifact org.springframework.batch:spring-batch-test: checking for updates from central
+[INFO] artifact org.springframework.cloud:spring-cloud-cloudfoundry-connector: checking for updates from central
+[INFO] artifact org.springframework.cloud:spring-cloud-core: checking for updates from central
+[INFO] artifact org.springframework.cloud:spring-cloud-heroku-connector: checking for updates from central
+[INFO] artifact org.springframework.cloud:spring-cloud-localconfig-connector: checking for updates from central
+[INFO] artifact org.springframework.cloud:spring-cloud-spring-service-connector: checking for updates from central
+[INFO] artifact org.springframework.hateoas:spring-hateoas: checking for updates from central
+[INFO] artifact org.springframework.kafka:spring-kafka: checking for updates from central
+[INFO] artifact org.springframework.kafka:spring-kafka-test: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-http: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-java-dsl: checking for updates from central
+[INFO] artifact org.springframework.ldap:spring-ldap-core: checking for updates from central
+[INFO] artifact org.springframework.ldap:spring-ldap-core-tiger: checking for updates from central
+[INFO] artifact org.springframework.ldap:spring-ldap-ldif-batch: checking for updates from central
+[INFO] artifact org.springframework.ldap:spring-ldap-ldif-core: checking for updates from central
+[INFO] artifact org.springframework.ldap:spring-ldap-odm: checking for updates from central
+[INFO] artifact org.springframework.ldap:spring-ldap-test: checking for updates from central
+[INFO] artifact org.springframework.mobile:spring-mobile-device: checking for updates from central
+[INFO] artifact org.springframework.plugin:spring-plugin-core: checking for updates from central
+[INFO] artifact org.springframework.plugin:spring-plugin-metadata: checking for updates from central
+[INFO] artifact org.springframework.restdocs:spring-restdocs-core: checking for updates from central
+[INFO] artifact org.springframework.restdocs:spring-restdocs-mockmvc: checking for updates from central
+[INFO] artifact org.springframework.restdocs:spring-restdocs-restassured: checking for updates from central
+[INFO] artifact org.springframework.retry:spring-retry: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-jwt: checking for updates from central
+[INFO] artifact org.springframework.security.oauth:spring-security-oauth: checking for updates from central
+[INFO] artifact org.springframework.security.oauth:spring-security-oauth2: checking for updates from central
+[INFO] artifact org.springframework.session:spring-session: checking for updates from central
+[INFO] artifact org.springframework.session:spring-session-data-gemfire: checking for updates from central
+[INFO] artifact org.springframework.session:spring-session-data-mongo: checking for updates from central
+[INFO] artifact org.springframework.session:spring-session-hazelcast: checking for updates from central
+[INFO] artifact org.springframework.session:spring-session-jdbc: checking for updates from central
+[INFO] artifact org.springframework.session:spring-session-data-redis: checking for updates from central
+[INFO] artifact org.springframework.social:spring-social-config: checking for updates from central
+[INFO] artifact org.springframework.social:spring-social-core: checking for updates from central
+[INFO] artifact org.springframework.social:spring-social-security: checking for updates from central
+[INFO] artifact org.springframework.social:spring-social-web: checking for updates from central
+[INFO] artifact org.springframework.social:spring-social-facebook: checking for updates from central
+[INFO] artifact org.springframework.social:spring-social-facebook-web: checking for updates from central
+[INFO] artifact org.springframework.social:spring-social-linkedin: checking for updates from central
+[INFO] artifact org.springframework.social:spring-social-twitter: checking for updates from central
+[INFO] artifact org.springframework.ws:spring-ws-core: checking for updates from central
+[INFO] artifact org.springframework.ws:spring-ws-security: checking for updates from central
+[INFO] artifact org.springframework.ws:spring-ws-support: checking for updates from central
+[INFO] artifact org.springframework.ws:spring-ws-test: checking for updates from central
+[INFO] artifact org.xerial:sqlite-jdbc: checking for updates from central
+[INFO] artifact org.thymeleaf:thymeleaf: checking for updates from central
+[INFO] artifact org.thymeleaf:thymeleaf-spring4: checking for updates from central
+[INFO] artifact org.thymeleaf.extras:thymeleaf-extras-conditionalcomments: checking for updates from central
+[INFO] artifact org.thymeleaf.extras:thymeleaf-extras-java8time: checking for updates from central
+[INFO] artifact org.thymeleaf.extras:thymeleaf-extras-springsecurity4: checking for updates from central
+[INFO] artifact org.webjars:hal-browser: checking for updates from central
+[INFO] artifact org.webjars:webjars-locator: checking for updates from central
+[INFO] artifact org.yaml:snakeyaml: checking for updates from central
+[INFO] artifact redis.clients:jedis: checking for updates from central
+[INFO] artifact wsdl4j:wsdl4j: checking for updates from central
+[INFO] artifact xml-apis:xml-apis: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.core:jackson-annotations: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.core:jackson-core: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.core:jackson-databind: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-avro: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-cbor: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-csv: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-ion: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-properties: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-protobuf: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-smile: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-xml: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.dataformat:jackson-dataformat-yaml: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-guava: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-hibernate3: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-hibernate4: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-hibernate5: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-hppc: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-jaxrs: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-joda: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-jdk8: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-json-org: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-jsr310: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-jsr353: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.datatype:jackson-datatype-pcollections: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jaxrs:jackson-jaxrs-base: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jaxrs:jackson-jaxrs-cbor-provider: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jaxrs:jackson-jaxrs-smile-provider: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jaxrs:jackson-jaxrs-xml-provider: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jaxrs:jackson-jaxrs-yaml-provider: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jr:jackson-jr-all: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jr:jackson-jr-objects: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jr:jackson-jr-retrofit2: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.jr:jackson-jr-stree: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-afterburner: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-guice: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-jaxb-annotations: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-jsonSchema: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-kotlin: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-mrbean: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-osgi: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-parameter-names: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-paranamer: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-scala_2.10: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-scala_2.11: checking for updates from central
+[INFO] artifact com.fasterxml.jackson.module:jackson-module-scala_2.12: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-api: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-core: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-1.2-api: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-jcl: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-flume-ng: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-taglib: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-jmx-gui: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-slf4j-impl: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-web: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-nosql: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-iostreams: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-jul: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-liquibase: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-api-scala_2.10: checking for updates from central
+[INFO] artifact org.apache.logging.log4j:log4j-api-scala_2.11: checking for updates from central
+[INFO] artifact org.springframework:spring-aop: checking for updates from central
+[INFO] artifact org.springframework:spring-aspects: checking for updates from central
+[INFO] artifact org.springframework:spring-beans: checking for updates from central
+[INFO] artifact org.springframework:spring-context: checking for updates from central
+[INFO] artifact org.springframework:spring-context-support: checking for updates from central
+[INFO] artifact org.springframework:spring-expression: checking for updates from central
+[INFO] artifact org.springframework:spring-instrument: checking for updates from central
+[INFO] artifact org.springframework:spring-instrument-tomcat: checking for updates from central
+[INFO] artifact org.springframework:spring-jdbc: checking for updates from central
+[INFO] artifact org.springframework:spring-jms: checking for updates from central
+[INFO] artifact org.springframework:spring-messaging: checking for updates from central
+[INFO] artifact org.springframework:spring-orm: checking for updates from central
+[INFO] artifact org.springframework:spring-oxm: checking for updates from central
+[INFO] artifact org.springframework:spring-test: checking for updates from central
+[INFO] artifact org.springframework:spring-tx: checking for updates from central
+[INFO] artifact org.springframework:spring-web: checking for updates from central
+[INFO] artifact org.springframework:spring-webmvc: checking for updates from central
+[INFO] artifact org.springframework:spring-webmvc-portlet: checking for updates from central
+[INFO] artifact org.springframework:spring-websocket: checking for updates from central
+[INFO] artifact org.springframework.data:spring-cql: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-cassandra: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-commons: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-couchbase: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-elasticsearch: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-gemfire: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-jpa: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-mongodb: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-mongodb-cross-store: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-mongodb-log4j: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-neo4j: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-redis: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-rest-webmvc: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-rest-core: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-rest-hal-browser: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-solr: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-keyvalue: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-envers: checking for updates from central
+[INFO] artifact org.springframework.data:spring-data-ldap: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-amqp: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-core: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-event: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-feed: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-file: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-ftp: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-gemfire: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-groovy: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-ip: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-jdbc: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-jms: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-jmx: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-jpa: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-mail: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-mongodb: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-mqtt: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-redis: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-rmi: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-scripting: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-security: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-sftp: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-stomp: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-stream: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-syslog: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-test: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-twitter: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-websocket: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-ws: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-xml: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-xmpp: checking for updates from central
+[INFO] artifact org.springframework.integration:spring-integration-zookeeper: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-acl: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-aspects: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-cas: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-config: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-core: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-crypto: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-data: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-ldap: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-messaging: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-openid: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-remoting: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-taglibs: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-test: checking for updates from central
+[INFO] artifact org.springframework.security:spring-security-web: checking for updates from central
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:28 min
+[INFO] Finished at: 2018-03-22T12:54:53Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

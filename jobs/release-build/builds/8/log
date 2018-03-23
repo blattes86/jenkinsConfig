@@ -1,0 +1,206 @@
+Started by user [8mha:////4Fb7p/eeegJ9At02th6o2yDywtR30eyAzl6S3hcR7kDeAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9gpz8AgBal7TKvwAAAA==[0mplop plip
+Building in workspace /var/jenkins_home/workspace/release-build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/blattes86/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/blattes86/sample-spring-boot.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/blattes86/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6c1ef4ada8874a8bfe7f2088c9fcb138dd2b3086 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6c1ef4ada8874a8bfe7f2088c9fcb138dd2b3086
+Commit message: "cast vers integer"
+ > git rev-list --no-walk 6c1ef4ada8874a8bfe7f2088c9fcb138dd2b3086 # timeout=10
+[release-build] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn versions:set -DgroupId=com.example -DartifactId=demo -DnewVersion=0.0.1
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- versions-maven-plugin:2.2:set (default-cli) @ demo ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /var/jenkins_home/workspace/release-build
+[INFO] Processing change of com.example:demo:0.0.1-SNAPSHOT -> 0.0.1
+[INFO] Processing com.example:demo
+[INFO]     Updating project com.example:demo
+[INFO]         from version 0.0.1-SNAPSHOT to 0.0.1
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.493 s
+[INFO] Finished at: 2018-03-22T13:33:36Z
+[INFO] ------------------------------------------------------------------------
+[release-build] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ demo ---
+[INFO] Deleting /var/jenkins_home/workspace/release-build/target
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ demo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/release-build/target/classes
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/release-build/src/test/resources
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ demo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/release-build/target/test-classes
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ demo ---
+[INFO] Surefire report directory: /var/jenkins_home/workspace/release-build/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+13:33:44.259 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+13:33:44.282 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:33:44.304 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:33:44.344 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:33:44.372 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
+13:33:44.388 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
+13:33:44.389 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
+13:33:44.389 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:33:44.390 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:33:44.473 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
+13:33:44.489 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+13:33:44.497 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+13:33:44.504 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+13:33:44.540 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [com/example/] to resources [URL [file:/var/jenkins_home/workspace/release-build/target/test-classes/com/example/], URL [file:/var/jenkins_home/workspace/release-build/target/classes/com/example/]]
+13:33:44.545 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/var/jenkins_home/workspace/release-build/target/test-classes/com/example]
+13:33:44.545 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/var/jenkins_home/workspace/release-build/target/test-classes/com/example] for files matching pattern [/var/jenkins_home/workspace/release-build/target/test-classes/com/example/*.class]
+13:33:44.547 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/var/jenkins_home/workspace/release-build/target/classes/com/example]
+13:33:44.548 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/var/jenkins_home/workspace/release-build/target/classes/com/example] for files matching pattern [/var/jenkins_home/workspace/release-build/target/classes/com/example/*.class]
+13:33:44.548 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/example/*.class] to resources [file [/var/jenkins_home/workspace/release-build/target/test-classes/com/example/DemoApplicationTests.class], file [/var/jenkins_home/workspace/release-build/target/classes/com/example/DemoApplication.class]]
+13:33:44.648 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/var/jenkins_home/workspace/release-build/target/classes/com/example/DemoApplication.class]
+13:33:44.652 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.DemoApplicationTests
+13:33:44.660 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.DemoApplicationTests]: using defaults.
+13:33:44.677 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+13:33:44.688 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+13:33:44.695 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+13:33:44.696 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+13:33:44.704 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@67b467e9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47db50c5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c072e3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4d1b0d2a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@954b04f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@149494d8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@710726a3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@646007f4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@481a15ff]
+13:33:44.714 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+13:33:44.715 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+Running com.example.DemoApplicationTests
+13:33:44.733 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+13:33:44.735 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:33:44.735 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:33:44.742 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:33:44.743 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.DemoApplicationTests], using SpringBootContextLoader
+13:33:44.744 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTests-context.xml] does not exist
+13:33:44.745 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.DemoApplicationTests]: class path resource [com/example/DemoApplicationTestsContext.groovy] does not exist
+13:33:44.745 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:33:44.746 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:33:44.755 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.DemoApplicationTests]
+13:33:44.756 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+13:33:44.756 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+13:33:44.756 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+13:33:44.760 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.DemoApplication for test class com.example.DemoApplicationTests
+13:33:44.766 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.DemoApplicationTests]: using defaults.
+13:33:44.776 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+13:33:44.796 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+13:33:44.797 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+13:33:44.804 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+13:33:44.805 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2698dc7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@43d7741f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@17baae6e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69379752, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27fe3806, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5f71c76a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d7acb34, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@48a242ce, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e4a7dd4]
+13:33:44.806 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+13:33:44.806 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+13:33:44.807 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+13:33:44.807 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+13:33:44.816 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2bea5ab4 testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3d8314f0 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1ce92674, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5bcab519, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@60c6f5b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+13:33:44.818 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.DemoApplicationTests]
+13:33:44.819 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.DemoApplicationTests]
+13:33:44.819 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2bea5ab4 testClass = DemoApplicationTests, testInstance = com.example.DemoApplicationTests@70a9f84e, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3d8314f0 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.example.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1ce92674, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5bcab519, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@60c6f5b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+13:33:44.951 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+13:33:44.952 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+13:33:44.952 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+13:33:44.953 [main] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
+13:33:44.964 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+13:33:44.965 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2018-03-22 13:33:45.527  INFO 7983 --- [           main] com.example.DemoApplicationTests         : Starting DemoApplicationTests on 00fa59366afa with PID 7983 (started by jenkins in /var/jenkins_home/workspace/release-build)
+2018-03-22 13:33:45.545  INFO 7983 --- [           main] com.example.DemoApplicationTests         : No active profile set, falling back to default profiles: default
+2018-03-22 13:33:45.614  INFO 7983 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d8704ef: startup date [Thu Mar 22 13:33:45 UTC 2018]; root of context hierarchy
+2018-03-22 13:33:46.588  INFO 7983 --- [           main] com.example.DemoApplicationTests         : Started DemoApplicationTests in 1.606 seconds (JVM running for 3.017)
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.984 sec - in com.example.DemoApplicationTests
+2018-03-22 13:33:46.743  INFO 7983 --- [       Thread-2] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d8704ef: startup date [Thu Mar 22 13:33:45 UTC 2018]; root of context hierarchy
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ demo ---
+[INFO] Building jar: /var/jenkins_home/workspace/release-build/target/demo-0.0.1.jar
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:1.5.3.RELEASE:repackage (default) @ demo ---
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ demo ---
+[INFO] Installing /var/jenkins_home/workspace/release-build/target/demo-0.0.1.jar to /var/jenkins_home/.m2/repository/com/example/demo/0.0.1/demo-0.0.1.jar
+[INFO] Installing /var/jenkins_home/workspace/release-build/pom.xml to /var/jenkins_home/.m2/repository/com/example/demo/0.0.1/demo-0.0.1.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.846 s
+[INFO] Finished at: 2018-03-22T13:33:48Z
+[INFO] ------------------------------------------------------------------------
+[release-build] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn versions:set -DgroupId=com.example -DartifactId=demo -DnewVersion=0.0.2-SNAPSHOT
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- versions-maven-plugin:2.2:set (default-cli) @ demo ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /var/jenkins_home/workspace/release-build
+[INFO] Processing change of com.example:demo:0.0.1 -> 0.0.2-SNAPSHOT
+[INFO] Processing com.example:demo
+[INFO]     Updating project com.example:demo
+[INFO]         from version 0.0.1 to 0.0.2-SNAPSHOT
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.903 s
+[INFO] Finished at: 2018-03-22T13:33:53Z
+[INFO] ------------------------------------------------------------------------
+[release-build] $ /bin/sh -xe /tmp/jenkins7098095726646346406.sh
++ git commit -am push after release 0.0.1 with new version 0.0.2-SNAPSHOT
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <(null)>) not allowed
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

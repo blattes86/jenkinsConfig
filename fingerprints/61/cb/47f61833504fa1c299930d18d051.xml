@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-21 14:22:58.194 UTC</timestamp>
+  <original>
+    <name>test/com.example:demo</name>
+    <number>3</number>
+  </original>
+  <md5sum>61cb47f61833504fa1c299930d18d051</md5sum>
+  <fileName>com.example:demo:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>test/com.example:demo</string>
+      <ranges>3</ranges>
+    </entry>
+    <entry>
+      <string>test</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

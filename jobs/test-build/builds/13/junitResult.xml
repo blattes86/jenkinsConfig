@@ -1,0 +1,66 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.24">
+  <suites>
+    <suite>
+      <file>/var/jenkins_home/workspace/test-build/target/surefire-reports/TEST-com.example.DemoApplicationTests.xml</file>
+      <name>com.example.DemoApplicationTests</name>
+      <duration>0.108</duration>
+      <time>0.108</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testdivisionnull</testName>
+          <skipped>true</skipped>
+          <stdout>[DEBUG] SpringJUnit4ClassRunner constructor called with [class com.example.DemoApplicationTests]
+[DEBUG] Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[DEBUG] Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+[DEBUG] Instantiating TestContextBootstrapper
+...[truncated 12684 chars]...
+t.test.context.filter.ExcludeFilterContextCustomizer@7cbd213e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6ec8211c], contextLoader = &apos;org.springframework.boot.test.context.SpringBootContextLoader&apos;, parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+</stdout>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.059</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testdivisionpar0</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.008</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testdivisionexecptionwithaletter</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.014</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testdivisionexecption</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.014</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>testdivision</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.013</duration>
+          <className>com.example.DemoApplicationTests</className>
+          <testName>contextLoads</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.108</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

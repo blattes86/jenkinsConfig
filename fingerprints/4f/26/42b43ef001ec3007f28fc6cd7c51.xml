@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-21 14:22:58.682 UTC</timestamp>
+  <md5sum>4f2642b43ef001ec3007f28fc6cd7c51</md5sum>
+  <fileName>org.springframework:spring-expression-4.3.8.RELEASE.jar</fileName>
+  <usages>
+    <entry>
+      <string>test/com.example:demo</string>
+      <ranges>3</ranges>
+    </entry>
+    <entry>
+      <string>test</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

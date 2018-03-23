@@ -1,0 +1,49 @@
+Started by user [8mha:////4Fb7p/eeegJ9At02th6o2yDywtR30eyAzl6S3hcR7kDeAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9gpz8AgBal7TKvwAAAA==[0mplop plip
+Building in workspace /var/jenkins_home/workspace/release-build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/blattes86/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/blattes86/sample-spring-boot.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/blattes86/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bf6368fef5b2bafb84ba6c3fad8fb18530e43949 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bf6368fef5b2bafb84ba6c3fad8fb18530e43949
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master bf6368fef5b2bafb84ba6c3fad8fb18530e43949
+Commit message: "push after release 0.0.2 with new version 0.0.3-SNAPSHOT"
+ > git rev-list --no-walk bf6368fef5b2bafb84ba6c3fad8fb18530e43949 # timeout=10
+[release-build] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn versions:set -DgroupId=com.example -DartifactId=demo -DnewVersion=0.0.3
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.3-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- versions-maven-plugin:2.2:set (default-cli) @ demo ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /var/jenkins_home/workspace/release-build
+[INFO] Processing change of com.example:demo:0.0.3-SNAPSHOT -> 0.0.3
+[INFO] Processing com.example:demo
+[INFO]     Updating project com.example:demo
+[INFO]         from version 0.0.3-SNAPSHOT to 0.0.3
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.448 s
+[INFO] Finished at: 2018-03-22T14:31:53Z
+[INFO] ------------------------------------------------------------------------
+[release-build] $ /bin/sh -xe /tmp/jenkins5357259238244139521.sh
++ git commit -am commit and tag after prepare release 0.0.3
+[master ea64ad8] commit and tag after prepare release 0.0.3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
++ git tag -a 0.0.3 -m release 0.0.3
+fatal: tag '0.0.3' already exists
+Build step 'Execute shell' marked build as failure
+Build did not succeed and the project is configured to only push after a successful build, so no pushing will occur.
+Finished: FAILURE

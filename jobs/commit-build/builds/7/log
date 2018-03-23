@@ -1,0 +1,107 @@
+Started by user [8mha:////4Fb7p/eeegJ9At02th6o2yDywtR30eyAzl6S3hcR7kDeAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9gpz8AgBal7TKvwAAAA==[0mplop plip
+Building in workspace /var/jenkins_home/workspace/commit-build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/blattes86/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/blattes86/sample-spring-boot.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/blattes86/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 4785bd7d03470e937ff926315532c5e57aff48a2 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4785bd7d03470e937ff926315532c5e57aff48a2
+Commit message: "ajout fonction diviser"
+ > git rev-list --no-walk 4785bd7d03470e937ff926315532c5e57aff48a2 # timeout=10
+[commit-build] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn -Dmaven.test.skip=true clean verify javadoc:javadoc
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ demo ---
+[INFO] Deleting /var/jenkins_home/workspace/commit-build/target
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ demo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/commit-build/target/classes
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ demo ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ demo ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ demo ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ demo ---
+[INFO] Building jar: /var/jenkins_home/workspace/commit-build/target/demo-0.0.1-SNAPSHOT.jar
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:1.5.3.RELEASE:repackage (default) @ demo ---
+[INFO] 
+[INFO] >>> maven-javadoc-plugin:2.10.4:javadoc (default-cli) > generate-sources @ demo >>>
+[INFO] 
+[INFO] <<< maven-javadoc-plugin:2.10.4:javadoc (default-cli) < generate-sources @ demo <<<
+[INFO] 
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-javadoc-plugin:2.10.4:javadoc (default-cli) @ demo ---
+[INFO] 
+Loading source files for package com.example...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_151
+Building tree for all the packages and classes...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/DemoApplication.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/package-frame.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/package-summary.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/package-tree.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/constant-values.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/class-use/DemoApplication.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/package-use.html...
+Building index for all the packages and classes...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/overview-tree.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/index-all.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/allclasses-frame.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/allclasses-noframe.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/index.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/help-doc.html...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.066 s
+[INFO] Finished at: 2018-03-21T16:10:00Z
+[INFO] ------------------------------------------------------------------------
+Publishing Javadoc
+ERROR: Build step failed with exception
+java.lang.IllegalStateException: basedir /var/jenkins_home/workspace/commit-build/WORKSPACE/PROJECTNAME/target/site/apidocs does not exist.
+	at org.apache.tools.ant.DirectoryScanner.scan(DirectoryScanner.java:879)
+	at hudson.FilePath$46.hasMatch(FilePath.java:2571)
+	at hudson.FilePath$46.invoke(FilePath.java:2455)
+	at hudson.FilePath$46.invoke(FilePath.java:2445)
+	at hudson.FilePath.act(FilePath.java:1009)
+	at hudson.FilePath.act(FilePath.java:987)
+	at hudson.FilePath.validateAntFileMask(FilePath.java:2445)
+	at hudson.FilePath.validateAntFileMask(FilePath.java:2422)
+	at hudson.FilePath.validateAntFileMask(FilePath.java:2415)
+	at hudson.tasks.JavadocArchiver.perform(JavadocArchiver.java:114)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1752)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Publish Javadoc' marked build as failure
+Finished: FAILURE

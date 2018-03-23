@@ -1,0 +1,11 @@
+commit 3bacad9f537a4d0419992101268ad1a7aa248d75
+tree 99b4d26519c5bba94bb270234d93da8c793a996e
+parent d82ba0ca7b57b0b391d62d069ddf09b038c783d8
+author blattes86 <blattes86@gmail.com> 2018-03-22 11:16:26 +0100
+committer blattes86 <blattes86@gmail.com> 2018-03-22 11:16:26 +0100
+
+    ajout test exception
+
+
+
+:100644 100644 3bf9483e6db8f9b487cc8d581bfa08bc47cbe216 f3d483d5ae099d75fb7a4bfffeb6ab030dd40f10 M	src/test/java/com/example/DemoApplicationTests.java

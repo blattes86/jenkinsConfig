@@ -1,0 +1,45 @@
+Started by user [8mha:////4Fb7p/eeegJ9At02th6o2yDywtR30eyAzl6S3hcR7kDeAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9gpz8AgBal7TKvwAAAA==[0mplop plip
+Building in workspace /var/jenkins_home/workspace/mon_projet_2/mon_projet_2_build
+[mon_projet_2_build] $ /bin/sh -xe /tmp/jenkins5727134046725192924.sh
++ pwd
+/var/jenkins_home/workspace/mon_projet_2/mon_projet_2_build
++ ls
++ env
+JENKINS_HOME=/var/jenkins_home
+JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
+RUN_CHANGES_DISPLAY_URL=http://localhost:8181/job/mon_projet_2/job/mon_projet_2_build/9/display/redirect?page=changes
+HOSTNAME=00fa59366afa
+NODE_LABELS=master
+HUDSON_URL=http://localhost:8181/
+SHLVL=0
+HOME=/var/jenkins_home
+BUILD_URL=http://localhost:8181/job/mon_projet_2/job/mon_projet_2_build/9/
+HUDSON_COOKIE=626a85ff-9f6e-4d34-b6a1-8936636d0115
+JENKINS_SERVER_COOKIE=2b7cda3a7eb86599
+JENKINS_UC=https://updates.jenkins.io
+WORKSPACE=/var/jenkins_home/workspace/mon_projet_2/mon_projet_2_build
+JAVA_VERSION=8u151
+NODE_NAME=master
+CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
+EXECUTOR_NUMBER=1
+JENKINS_VERSION=2.107.1
+BUILD_DISPLAY_NAME=#9
+HUDSON_HOME=/var/jenkins_home
+JOB_BASE_NAME=mon_projet_2_build
+JAVA_DEBIAN_VERSION=8u151-b12-1~deb9u1
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+BUILD_ID=9
+BUILD_TAG=jenkins-mon_projet_2-mon_projet_2_build-9
+LANG=C.UTF-8
+JENKINS_URL=http://localhost:8181/
+JOB_URL=http://localhost:8181/job/mon_projet_2/job/mon_projet_2_build/
+BUILD_NUMBER=9
+RUN_DISPLAY_URL=http://localhost:8181/job/mon_projet_2/job/mon_projet_2_build/9/display/redirect
+JENKINS_SLAVE_AGENT_PORT=50000
+HUDSON_SERVER_COOKIE=2b7cda3a7eb86599
+JOB_DISPLAY_URL=http://localhost:8181/job/mon_projet_2/job/mon_projet_2_build/display/redirect
+JOB_NAME=mon_projet_2/mon_projet_2_build
+COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
+JAVA_HOME=/docker-java-home
+PWD=/var/jenkins_home/workspace/mon_projet_2/mon_projet_2_build
+Finished: SUCCESS

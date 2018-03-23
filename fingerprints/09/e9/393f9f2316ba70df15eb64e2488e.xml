@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-21 14:22:58.578 UTC</timestamp>
+  <md5sum>09e9393f9f2316ba70df15eb64e2488e</md5sum>
+  <fileName>org.springframework.boot:spring-boot-test-autoconfigure-1.5.3.RELEASE.jar</fileName>
+  <usages>
+    <entry>
+      <string>test/com.example:demo</string>
+      <ranges>3</ranges>
+    </entry>
+    <entry>
+      <string>test</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

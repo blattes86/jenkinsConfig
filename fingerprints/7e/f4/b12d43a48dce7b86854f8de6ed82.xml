@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-21 14:22:58.260 UTC</timestamp>
+  <md5sum>7ef4b12d43a48dce7b86854f8de6ed82</md5sum>
+  <fileName>org.springframework.boot:spring-boot-starter-test-1.5.3.RELEASE.jar</fileName>
+  <usages>
+    <entry>
+      <string>test/com.example:demo</string>
+      <ranges>3</ranges>
+    </entry>
+    <entry>
+      <string>test</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

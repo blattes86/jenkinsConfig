@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-03-21 14:22:58.179 UTC</timestamp>
+  <original>
+    <name>test/com.example:demo</name>
+    <number>3</number>
+  </original>
+  <md5sum>9c2f71049bdb6c3097c0703e700fb7c1</md5sum>
+  <fileName>com.example:demo-0.0.1-SNAPSHOT.jar</fileName>
+  <usages>
+    <entry>
+      <string>test/com.example:demo</string>
+      <ranges>3</ranges>
+    </entry>
+    <entry>
+      <string>test</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

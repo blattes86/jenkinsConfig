@@ -1,0 +1,10 @@
+Started on Mar 22, 2018 2:12:19 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 237a9d72667a137f53f6f2e2dda59fe66c82ee8b (refs/remotes/origin/master)
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git ls-remote -h https://github.com/blattes86/sample-spring-boot.git # timeout=10
+Found 1 remote heads on https://github.com/blattes86/sample-spring-boot.git
+[poll] Latest remote head revision on refs/heads/master is: bf6368fef5b2bafb84ba6c3fad8fb18530e43949
+Done. Took 0.76 sec
+Changes found

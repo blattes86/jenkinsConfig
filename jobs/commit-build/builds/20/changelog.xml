@@ -1,0 +1,11 @@
+commit 3efa92a33f772b75f4176f51d760ce48837488f8
+tree fa6394cf92ca0ed17a64654d226a88d77787a01c
+parent 9ff0d4b1fcae98043f6696fb18c9bba31bdefc05
+author blattes86 <blattes86@gmail.com> 2018-03-22 12:08:58 +0100
+committer blattes86 <blattes86@gmail.com> 2018-03-22 12:08:58 +0100
+
+    cast vers integer
+
+
+
+:100644 100644 06e0fcbdff13896e358ffed69bd7ea052504494c a30976ae21de2ac4292c248e5540f77fd1818857 M	src/test/java/com/example/DemoApplicationTests.java

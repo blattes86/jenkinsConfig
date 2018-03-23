@@ -1,0 +1,13 @@
+commit 4785bd7d03470e937ff926315532c5e57aff48a2
+tree 860deb320bd88927065890fe64fcc3403f3293b8
+parent 5449fb5347828172a24b15616d1656bba3e37301
+author blattes86 <blattes86@gmail.com> 2018-03-21 16:49:39 +0100
+committer blattes86 <blattes86@gmail.com> 2018-03-21 16:49:39 +0100
+
+    ajout fonction diviser
+
+
+
+:100644 100644 f7c6071692c056f76b49ff1222c7402e0dbbf9a1 2e4b3f52f0440c90e7f9fd3935e0e07c2f138bd3 M	pom.xml
+:100644 100644 6fce78941bba81eaf1ba30773f7944974b846574 7188e412c0333b3c27ed849581785e4735083f92 M	src/main/java/com/example/DemoApplication.java
+:100644 100644 5ad5ac2e17fb015256d2b6001d3e12fff1f42434 8be8bc8155e4fb681519bfb405dd06e2bbb71582 M	src/test/java/com/example/DemoApplicationTests.java

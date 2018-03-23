@@ -1,0 +1,97 @@
+Started by an SCM change
+Building in workspace /var/jenkins_home/workspace/commit-build
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/blattes86/sample-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/blattes86/sample-spring-boot.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/blattes86/sample-spring-boot.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d82ba0ca7b57b0b391d62d069ddf09b038c783d8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d82ba0ca7b57b0b391d62d069ddf09b038c783d8
+Commit message: "modification des tests"
+ > git rev-list --no-walk 250cb01f9510feafe17bde6fb549b2d189ba5ff1 # timeout=10
+[commit-build] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn -Dmaven.test.skip=true clean verify javadoc:javadoc checkstyle:checkstyle
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ demo ---
+[INFO] Deleting /var/jenkins_home/workspace/commit-build/target
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ demo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/commit-build/target/classes
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ demo ---
+[INFO] Not copying test resources
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ demo ---
+[INFO] Not compiling test sources
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ demo ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ demo ---
+[INFO] Building jar: /var/jenkins_home/workspace/commit-build/target/demo-0.0.1-SNAPSHOT.jar
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:1.5.3.RELEASE:repackage (default) @ demo ---
+[INFO] 
+[INFO] >>> maven-javadoc-plugin:2.10.4:javadoc (default-cli) > generate-sources @ demo >>>
+[INFO] 
+[INFO] <<< maven-javadoc-plugin:2.10.4:javadoc (default-cli) < generate-sources @ demo <<<
+[INFO] 
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-javadoc-plugin:2.10.4:javadoc (default-cli) @ demo ---
+[INFO] 
+Loading source files for package com.example...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_151
+Building tree for all the packages and classes...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/DemoApplication.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/package-frame.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/package-summary.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/package-tree.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/constant-values.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/class-use/DemoApplication.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/com/example/package-use.html...
+Building index for all the packages and classes...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/overview-tree.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/index-all.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/allclasses-frame.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/allclasses-noframe.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/index.html...
+Generating /var/jenkins_home/workspace/commit-build/target/site/apidocs/help-doc.html...
+[INFO] 
+[8mha:////4G7nBa3Nw5DpaX20RJvvdgC8wB0wjjqtkRkAZ+M1dAQpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-checkstyle-plugin:3.0.0:checkstyle (default-cli) @ demo ---
+[INFO] There are 18 errors reported by Checkstyle 6.18 with sun_checks.xml ruleset.
+[8mha:////4Dx9SeYcD+Xpo40aJfaLuozeoY0XeMe8DJPI2/N/opDzAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Unable to locate Source XRef to link to - DISABLED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.538 s
+[INFO] Finished at: 2018-03-22T09:28:54Z
+[INFO] ------------------------------------------------------------------------
+[CHECKSTYLE] Collecting checkstyle analysis files...
+[CHECKSTYLE] Searching for all files in /var/jenkins_home/workspace/commit-build that match the pattern target/checkstyle-result.xml
+[CHECKSTYLE] Parsing 1 file in /var/jenkins_home/workspace/commit-build
+[CHECKSTYLE] Successfully parsed file /var/jenkins_home/workspace/commit-build/target/checkstyle-result.xml with 18 unique warnings and 0 duplicates.
+<Git Blamer> Using GitBlamer to create author and commit information for all warnings.
+<Git Blamer> GIT_COMMIT=d82ba0ca7b57b0b391d62d069ddf09b038c783d8, workspace=/var/jenkins_home/workspace/commit-build
+ > git rev-parse d82ba0ca7b57b0b391d62d069ddf09b038c783d8^{commit} # timeout=10
+<Git Blamer> Skipping file /var/jenkins_home/workspace/commit-build/src/main/resources/application.properties, no result found.
+[CHECKSTYLE] Computing warning deltas based on reference build #13
+Publishing Javadoc
+Finished: SUCCESS

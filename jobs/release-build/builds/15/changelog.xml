@@ -1,0 +1,22 @@
+commit bf6368fef5b2bafb84ba6c3fad8fb18530e43949
+tree 9c5e856995fba734a294078d0cbd2576925a3dbd
+parent 5daa90634f467e460e85914f6bdf86648fda1cc1
+author blattes86 <blattes86@gmail.com> 2018-03-22 14:10:14 +0000
+committer blattes86 <blattes86@gmail.com> 2018-03-22 14:10:14 +0000
+
+    push after release 0.0.2 with new version 0.0.3-SNAPSHOT
+
+
+
+:100644 100644 ffcd77384b03998298d40cf577a21b136c2dc718 17b25ab6cca974b9ea089972ea93c510254c2bb6 M	pom.xml
+commit 5daa90634f467e460e85914f6bdf86648fda1cc1
+tree 59320794af816890bdc5ca4d5f55edde14753289
+parent 237a9d72667a137f53f6f2e2dda59fe66c82ee8b
+author blattes86 <blattes86@gmail.com> 2018-03-22 14:09:56 +0000
+committer blattes86 <blattes86@gmail.com> 2018-03-22 14:09:56 +0000
+
+    commit and tag after prepare release 0.0.2
+
+
+
+:100644 100644 152b0425a7632061d98e72be3a9da1d9b55f723a ffcd77384b03998298d40cf577a21b136c2dc718 M	pom.xml

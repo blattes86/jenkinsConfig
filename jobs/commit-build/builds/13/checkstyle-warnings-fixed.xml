@@ -1,0 +1,211 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<annotation-array>
+  <warning plugin="checkstyle@3.50">
+    <message>Parameter b should be final.</message>
+    <priority>HIGH</priority>
+    <key>-5365685069776608554</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.95">
+        <start>12</start>
+        <end>12</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>12</primaryLineNumber>
+    <fileName>/var/jenkins_home/workspace/commit-build/src/main/java/com/example/DemoApplication.java</fileName>
+    <moduleName></moduleName>
+    <packageName>com.example</packageName>
+    <category>Checks</category>
+    <type>FinalParametersCheck</type>
+    <contextHashCode>2132230379</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName>src/main/java/com/example</pathName>
+    <primaryColumnStart>48</primaryColumnStart>
+    <primaryColumnEnd>48</primaryColumnEnd>
+    <build>12</build>
+    <authorName>blattes86</authorName>
+    <authorEmail>blattes86@gmail.com</authorEmail>
+    <commitId>4785bd7d03470e937ff926315532c5e57aff48a2</commitId>
+  </warning>
+  <warning plugin="checkstyle@3.50">
+    <message>Parameter args should be final.</message>
+    <priority>HIGH</priority>
+    <key>-5365685069776608558</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.95">
+        <start>9</start>
+        <end>9</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>9</primaryLineNumber>
+    <fileName reference="../../warning/fileName"/>
+    <moduleName reference="../../warning/moduleName"/>
+    <packageName reference="../../warning/packageName"/>
+    <category>Checks</category>
+    <type>FinalParametersCheck</type>
+    <contextHashCode>-1152358013</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName reference="../../warning/pathName"/>
+    <primaryColumnStart>33</primaryColumnStart>
+    <primaryColumnEnd>33</primaryColumnEnd>
+    <build>12</build>
+    <authorName>Julien Albert</authorName>
+    <authorEmail>Julien Albert</authorEmail>
+    <commitId>4fbc7ae1cd95d6c01be91957f7d4569d8a1253a3</commitId>
+  </warning>
+  <warning plugin="checkstyle@3.50">
+    <message>File contains tab characters (this is the first instance).</message>
+    <priority>HIGH</priority>
+    <key>-5365685069776608560</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.95">
+        <start>9</start>
+        <end>9</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>9</primaryLineNumber>
+    <fileName reference="../../warning/fileName"/>
+    <moduleName reference="../../warning/moduleName"/>
+    <packageName reference="../../warning/packageName"/>
+    <category>Whitespace</category>
+    <type>FileTabCharacterCheck</type>
+    <contextHashCode>-1172245357</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName reference="../../warning/pathName"/>
+    <primaryColumnStart>1</primaryColumnStart>
+    <primaryColumnEnd>1</primaryColumnEnd>
+    <build>12</build>
+    <authorName>Julien Albert</authorName>
+    <authorEmail>Julien Albert</authorEmail>
+    <commitId>4fbc7ae1cd95d6c01be91957f7d4569d8a1253a3</commitId>
+  </warning>
+  <warning plugin="checkstyle@3.50">
+    <message>&apos;,&apos; is not followed by whitespace.</message>
+    <priority>HIGH</priority>
+    <key>-5365685069776608555</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.95">
+        <start>12</start>
+        <end>12</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>12</primaryLineNumber>
+    <fileName reference="../../warning/fileName"/>
+    <moduleName reference="../../warning/moduleName"/>
+    <packageName reference="../../warning/packageName"/>
+    <category>Whitespace</category>
+    <type>WhitespaceAfterCheck</type>
+    <contextHashCode>322142956</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName reference="../../warning/pathName"/>
+    <primaryColumnStart>48</primaryColumnStart>
+    <primaryColumnEnd>48</primaryColumnEnd>
+    <build>12</build>
+    <authorName>blattes86</authorName>
+    <authorEmail>blattes86@gmail.com</authorEmail>
+    <commitId>4785bd7d03470e937ff926315532c5e57aff48a2</commitId>
+  </warning>
+  <warning plugin="checkstyle@3.50">
+    <message>Parameter a should be final.</message>
+    <priority>HIGH</priority>
+    <key>-5365685069776608556</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.95">
+        <start>12</start>
+        <end>12</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>12</primaryLineNumber>
+    <fileName reference="../../warning/fileName"/>
+    <moduleName reference="../../warning/moduleName"/>
+    <packageName reference="../../warning/packageName"/>
+    <category>Checks</category>
+    <type>FinalParametersCheck</type>
+    <contextHashCode>2132230379</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName reference="../../warning/pathName"/>
+    <primaryColumnStart>38</primaryColumnStart>
+    <primaryColumnEnd>38</primaryColumnEnd>
+    <build>12</build>
+    <authorName>blattes86</authorName>
+    <authorEmail>blattes86@gmail.com</authorEmail>
+    <commitId>4785bd7d03470e937ff926315532c5e57aff48a2</commitId>
+  </warning>
+  <warning plugin="checkstyle@3.50">
+    <message>Missing a Javadoc comment.</message>
+    <priority>HIGH</priority>
+    <key>-5365685069776608557</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.95">
+        <start>12</start>
+        <end>12</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>12</primaryLineNumber>
+    <fileName reference="../../warning/fileName"/>
+    <moduleName reference="../../warning/moduleName"/>
+    <packageName reference="../../warning/packageName"/>
+    <category>Javadoc</category>
+    <type>JavadocMethodCheck</type>
+    <contextHashCode>-1125460236</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName reference="../../warning/pathName"/>
+    <primaryColumnStart>9</primaryColumnStart>
+    <primaryColumnEnd>9</primaryColumnEnd>
+    <build>12</build>
+    <authorName>blattes86</authorName>
+    <authorEmail>blattes86@gmail.com</authorEmail>
+    <commitId>4785bd7d03470e937ff926315532c5e57aff48a2</commitId>
+  </warning>
+  <warning plugin="checkstyle@3.50">
+    <message>&apos;{&apos; at column 5 should be on the previous line.</message>
+    <priority>HIGH</priority>
+    <key>-5365685069776608553</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.95">
+        <start>13</start>
+        <end>13</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>13</primaryLineNumber>
+    <fileName reference="../../warning/fileName"/>
+    <moduleName reference="../../warning/moduleName"/>
+    <packageName reference="../../warning/packageName"/>
+    <category>Blocks</category>
+    <type>LeftCurlyCheck</type>
+    <contextHashCode>1932766238</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName reference="../../warning/pathName"/>
+    <primaryColumnStart>5</primaryColumnStart>
+    <primaryColumnEnd>5</primaryColumnEnd>
+    <build>12</build>
+    <authorName>blattes86</authorName>
+    <authorEmail>blattes86@gmail.com</authorEmail>
+    <commitId>4785bd7d03470e937ff926315532c5e57aff48a2</commitId>
+  </warning>
+  <warning plugin="checkstyle@3.50">
+    <message reference="../../warning[6]/message"/>
+    <priority>HIGH</priority>
+    <key>-5365685069776608559</key>
+    <lineRanges>
+      <range plugin="analysis-core@1.95">
+        <start>9</start>
+        <end>9</end>
+      </range>
+    </lineRanges>
+    <primaryLineNumber>9</primaryLineNumber>
+    <fileName reference="../../warning/fileName"/>
+    <moduleName reference="../../warning/moduleName"/>
+    <packageName reference="../../warning/packageName"/>
+    <category>Javadoc</category>
+    <type>JavadocMethodCheck</type>
+    <contextHashCode>-115081332</contextHashCode>
+    <origin>checkstyle</origin>
+    <pathName reference="../../warning/pathName"/>
+    <primaryColumnStart>9</primaryColumnStart>
+    <primaryColumnEnd>9</primaryColumnEnd>
+    <build>12</build>
+    <authorName>Julien Albert</authorName>
+    <authorEmail>Julien Albert</authorEmail>
+    <commitId>4fbc7ae1cd95d6c01be91957f7d4569d8a1253a3</commitId>
+  </warning>
+</annotation-array>

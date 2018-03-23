@@ -1,0 +1,11 @@
+commit 8de95c9ae6a52b8b8d172160cdd389c1a9666e8d
+tree 5bd1f109bdd9d2d9066a04f8d0c6a4c7c25a7369
+parent 6c1ef4ada8874a8bfe7f2088c9fcb138dd2b3086
+author blattes86 <blattes86@gmail.com> 2018-03-22 13:45:11 +0000
+committer blattes86 <blattes86@gmail.com> 2018-03-22 13:45:11 +0000
+
+    push after release 0.0.1 with new version 0.0.2-SNAPSHOT
+
+
+
+:100644 100644 2e4b3f52f0440c90e7f9fd3935e0e07c2f138bd3 152b0425a7632061d98e72be3a9da1d9b55f723a M	pom.xml
